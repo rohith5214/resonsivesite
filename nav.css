@@ -1,0 +1,273 @@
+body {
+    margin: 0px;
+    background-color: darkgray;
+    background: url(./images/bg-home.jpg) no-repeat;
+}
+#header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black ;
+}
+.nav-bar img{
+    width: 25%;
+    margin-left: 40px;
+}
+.nav-bar ul {
+    
+    float: right;
+}
+.nav-bar ul li {
+    display: inline;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.checkbtn  {
+    color: white;
+    font-size: 25px;
+    float: right;
+    margin: 2% 4%;
+    display: none;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+#home {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.home-detls {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image img {
+    width: 80%;
+    margin: 22% 0px 0px 22%;
+}
+.home-content {
+    margin: 12% 20% 0px 12%;
+}
+.home-content h1 {
+    font-size: 60px;
+    color: white;
+}
+.home-content a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 100px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 18px;
+}
+.home-content a:hover {
+    background-color: brown;
+}
+#content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    background-color:#630031;
+}
+.content-dtls h2 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.content-dtls p{
+    text-align: justify;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    line-height: 40px;
+}
+#row {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+}
+.row-content {
+    display: flex;
+    padding-top: 25px;
+    justify-content:space-evenly
+    
+}
+.row-content div {
+    border: 1px ;
+    width: 300px;
+    border-radius: 10px;
+}
+.row-content p{
+    text-align: justify;
+    color: white;
+}
+.row-content div h3 {
+    text-align: center;
+    color: white;
+}
+.row-content div img {
+    margin: 4% 2% 0px 11%;
+}
+#footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #630031;
+}
+.footer-cnt{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-cnt h3 {
+    color: white;
+    font-size: 23px;
+}
+.footer-cnt h5 {
+    color: white;
+    font-size: 20px;
+}
+.footer-cnt ol {
+    list-style: none;
+    color: white;
+}
+.footer-cnt ol li {
+    padding: .4rem;
+}
+.footer-cnt ol li a i {
+    color: white;
+    font-size: 25px;
+}
+.footer-cnt img {
+    width: 50%;
+}
+#para {
+    text-align: center;
+    background-color: #630031;
+    margin-top: -30px;
+    color: white;
+}
+
+@media (max-width:952px){
+    body #header {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    } 
+    .nav-bar{
+       min-height: 73px;
+       width: 100%;
+    }
+    .nav-bar img {
+        width: 70%;
+        padding-left: -80px;
+        margin-left: 5px;
+    }
+    
+}
+@media (max-width:858px){
+    .checkbtn {
+        display: block;
+    }
+     ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -105%;
+        text-align: center;
+        cursor: pointer;
+        padding-left: 10px;
+        transition: all .5s;
+    }
+    .nav-bar ul li{
+        display: block;
+    }
+    .nav-bar ul li a {
+        font-size: 20px;
+    }
+    .nav-bar ul li a:hover {
+        color: blue;
+    }
+     #check:checked~ul {
+        left: 0;
+    }
+}
+@media (max-width:800px){
+    #home {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    .home-detls{
+        display: block;
+    }
+    .image img {
+        width: 60%;
+    }
+    .home-content h1{
+        font-size: 30px;
+        margin-left: 35px;
+    }
+    .home-content a {
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    
+}
+@media (max-width:750px){
+    #content{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 330px;
+    }
+    .content-dtls h2{
+        text-align: center;
+    }
+    .content-dtls p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #row {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 1500px;
+    }
+    .row-content{
+        display: block;
+        
+    }
+    .row-content div {
+        text-align: center;
+        margin-left: 40px;
+    }
+    #footer {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        margin-top: -23px;
+        height: 700px;
+    }
+    .footer-cnt {
+        display: block;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+}
